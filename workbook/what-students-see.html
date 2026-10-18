@@ -8,6 +8,15 @@
 <link rel="apple-touch-icon" href="../images/icon-180.png">
 <link rel="stylesheet" href="../css/styles.css?v=14">
 <link rel="stylesheet" href="workbook.css?v=15">
+<style>
+.ai-labels{list-style:none;margin:14px 0 16px;padding:0;display:grid;gap:12px;}
+.ai-labels li{display:grid;grid-template-columns:230px 1fr;gap:18px;align-items:center;background:#fff;border:1px solid #d9e2ea;border-radius:12px;padding:14px 16px;}
+.ai-chip{display:inline-flex;align-items:center;gap:10px;padding:9px 14px;background:#fff;border:1px solid #d9e2ea;border-left:5px solid #e7a614;border-radius:8px;box-shadow:0 3px 8px rgba(0,52,95,.08);color:#00345f;font-weight:800;font-size:1.05rem;white-space:nowrap;}
+.ai-chip .dots{letter-spacing:2px;font-size:1.1rem;line-height:1;}
+.ai-chip .on{color:#e7a614;}.ai-chip .off{color:#00467f;}
+.ai-labels p{margin:0;}
+@media (max-width:700px){.ai-labels li{grid-template-columns:1fr;gap:10px;}}
+</style>
 </head>
 <body class="guide-page intro-page workbook-page" data-workbook="what-students-see">
 
@@ -54,10 +63,10 @@
 <span class="section-title">The Words Students See</span>
 
 <h3>The AI use labels</h3>
-<ul>
-<li><strong>No AI.</strong> You do this work on your own. Your instructor chose this label because the skill itself is what you're practicing.</li>
-<li><strong>AI-supported.</strong> You can use AI for the parts your instructor names, like brainstorming or checking grammar. The thinking and the final work are yours.</li>
-<li><strong>AI-integrated.</strong> Using AI well is part of the assignment. You might check what AI gives you against a standard, or explain how you used AI.</li>
+<ul class="ai-labels">
+<li><span class="ai-chip"><span class="dots" aria-hidden="true"><span class="off">&#9675;</span><span class="off">&#9675;</span></span>No AI</span><p>You do this work on your own. Your instructor chose this label because the skill itself is what you're practicing.</p></li>
+<li><span class="ai-chip"><span class="dots" aria-hidden="true"><span class="on">&#9679;</span><span class="off">&#9675;</span></span>AI-supported</span><p>You can use AI for the parts your instructor names, like brainstorming or checking grammar. The thinking and the final work are yours.</p></li>
+<li><span class="ai-chip"><span class="dots" aria-hidden="true"><span class="on">&#9679;</span><span class="on">&#9679;</span></span>AI-integrated</span><p>Using AI well is part of the assignment. You might check what AI gives you against a standard, or explain how you used AI.</p></li>
 </ul>
 <p>Students are told to find the label at the top of the assignment directions, and to ask you before they use AI if an assignment doesn't have one.</p>
 
