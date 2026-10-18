@@ -5,9 +5,9 @@ Two connected faculty resources for the **BE Framework**, five habits students d
 - **The playbook** explains the five behaviors and how students grow in them.
 - **The workbook** helps faculty put one behavior to work in a course they teach.
 
-**View the playbook:** https://octc-id.github.io/AI-literacy-playbook/
-**View the workbook:** https://octc-id.github.io/AI-literacy-playbook/workbook/start-here.html
-**AI Label Maker:** https://octc-id.github.io/AI-literacy-playbook/ai-label/
+**View the playbook:** https://octc-instructional-design.github.io/ai-literacy-playbook/
+**View the workbook:** https://octc-instructional-design.github.io/ai-literacy-playbook/workbook/start-here.html
+**AI Label Maker:** https://octc-instructional-design.github.io/ai-literacy-playbook/ai-label/
 
 ## What this is
 
