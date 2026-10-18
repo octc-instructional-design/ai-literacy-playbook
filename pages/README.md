@@ -2,7 +2,7 @@
 
 A faculty guide to the **BE Framework**: five habits students develop to use AI thoughtfully in their learning and work.
 
-**View the playbook:** https://octc-id.github.io/AI-literacy-guidebook-4264/
+**View the playbook:** https://octc-instructional-design.github.io/ai-literacy-playbook/
 
 ## What this is
 
