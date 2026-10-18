@@ -9,6 +9,25 @@
 <link rel="apple-touch-icon" href="../images/icon-180.png">
 <link rel="stylesheet" href="../css/styles.css?v=14">
 <link rel="stylesheet" href="../workbook/workbook.css?v=15">
+<style>
+.roles{margin:18px 0 26px;display:grid;grid-template-columns:1fr 92px 1fr 92px 1fr;align-items:stretch;}
+.role{background:#fff;border:1px solid #d9e2ea;border-top:6px solid var(--octc-gold,#e7a614);border-radius:12px;padding:18px 18px 16px;box-shadow:0 8px 20px rgba(0,52,95,.08);display:flex;flex-direction:column;gap:8px;}
+.role .num{width:40px;height:40px;border-radius:50%;background:#011d41;color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.1rem;}
+.role h3{margin:0;color:#00345f;font-size:1.2rem;}
+.role .does{margin:0;font-weight:700;color:#00467f;}
+.role p{margin:0;font-size:.95rem;line-height:1.5;}
+.role .makes{margin-top:auto;padding-top:10px;border-top:1px solid #e6edf3;font-size:.85rem;color:#52606d;}
+.role .makes strong{color:#00345f;}
+.turn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:0 6px;text-align:center;}
+.turn .arrow{width:56px;height:24px;}
+.turn .label{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#00345f;}
+.turn .sub{font-size:.75rem;color:#52606d;line-height:1.3;}
+.principles{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.principles li{background:#f5f8fb;border-left:4px solid #00467f;border-radius:0 8px 8px 0;padding:12px 14px;font-size:.95rem;}
+.principles strong{display:block;color:#00345f;margin-bottom:2px;}
+.kit-quote{margin:14px 0 4px;padding:12px 16px;border-left:4px solid var(--octc-gold,#e7a614);background:#fffaf0;font-style:italic;color:#00345f;}
+@media (max-width:860px){.roles{grid-template-columns:1fr;gap:4px}.turn{flex-direction:row;padding:8px 0}.turn .arrow{transform:rotate(90deg);width:40px}.principles{grid-template-columns:1fr}}
+</style>
 </head>
 <body class="guide-page intro-page workbook-page" data-workbook="facilitator">
 
@@ -36,9 +55,44 @@
 <div class="wb-card"><span class="wb-label">What this is</span><p>Everything used to run the workshop, in one place: the decks, the Padlet wall, the run of show, the One-Change Card, and the follow-up. Nothing in the playbook links here. It isn&rsquo;t secret, just out of the way.</p></div>
 
 <div class="section wb-lesson">
-<span class="section-title">The Idea</span>
-<p>Faculty are expected to teach AI literacy while they&rsquo;re still learning it themselves. The workshop separates the roles on purpose. Faculty first use AI as learners on a real task from their own lives, then look back at that experience as teachers, and finally commit to one change in a course they teach.</p>
-<p>The BE behaviors are never taught up front. The five reflection questions seed them, and the reveal names what participants already said.</p>
+<span class="section-title">Why the Workshop Works This Way</span>
+<p>Faculty are being asked to teach AI literacy while they&rsquo;re still learning it themselves. Most AI training skips over that tension. This workshop is built on it.</p>
+<p class="kit-quote">Faculty can&rsquo;t effectively teach AI literacy until they&rsquo;ve experienced it as learners.</p>
+
+<h3>Three roles, one at a time</h3>
+<div class="roles" role="list" aria-label="The three roles in order">
+  <div class="role" role="listitem">
+    <span class="num" aria-hidden="true">1</span>
+    <h3>BE the Student</h3>
+    <p class="does">Use AI as a learner</p>
+    <p>Faculty use AI on something real from their own lives, a question they don&rsquo;t already know the answer to. Work is off limits. Being a genuine novice makes the decisions about trusting and checking AI feel real.</p>
+    <p class="makes"><strong>Leaves behind:</strong> anonymous answers to the five questions on the wall</p>
+  </div>
+  <div class="turn" aria-hidden="true"><svg class="arrow" viewBox="0 0 56 24" aria-hidden="true" focusable="false"><path d="M2 12h46" stroke="#e7a614" stroke-width="4" stroke-linecap="round"/><path d="M40 4l10 8-10 8" fill="none" stroke="#e7a614" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="label">The hinge</span><span class="sub">A hard break: leave as a learner, return as a teacher</span></div>
+  <div class="role" role="listitem">
+    <span class="num" aria-hidden="true">2</span>
+    <h3>BE the Teacher</h3>
+    <p class="does">Read it as a teacher</p>
+    <p>Faculty read their own answers back, one cluster at a time, and ask what those answers say about their students. Their own experience becomes the evidence.</p>
+    <p class="makes"><strong>Leaves behind:</strong> the five clusters, which the reveal names as the BE behaviors</p>
+  </div>
+  <div class="turn" aria-hidden="true"><svg class="arrow" viewBox="0 0 56 24" aria-hidden="true" focusable="false"><path d="M2 12h46" stroke="#e7a614" stroke-width="4" stroke-linecap="round"/><path d="M40 4l10 8-10 8" fill="none" stroke="#e7a614" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="label">The reveal</span><span class="sub">&ldquo;You didn&rsquo;t learn this framework today. You generated it.&rdquo;</span></div>
+  <div class="role" role="listitem">
+    <span class="num" aria-hidden="true">3</span>
+    <h3>BE the Change</h3>
+    <p class="does">Commit to one change</p>
+    <p>With the behaviors named, each person commits to one change in one course they teach, with a date.</p>
+    <p class="makes"><strong>Leaves behind:</strong> a One-Change Card: behavior, change, course, date</p>
+  </div>
+</div>
+
+<h3>What holds it together</h3>
+<ul class="principles">
+  <li><strong>The behaviors come last.</strong>The five questions quietly seed them, and the reveal names what participants already said. It lands as recognition.</li>
+  <li><strong>The roles stay separate.</strong>The facilitator enforces the boundaries. If someone starts thinking about their syllabus during the learner task, bring them back.</li>
+  <li><strong>One change, written down.</strong>A list is a plan to do nothing. One dated change on a card is something you can follow up on.</li>
+  <li><strong>The focus is judgment.</strong>The workshop builds habits of deciding, checking, and owning the work, whatever tool people use.</li>
+</ul>
 </div>
 
 <div class="section wb-lesson">
