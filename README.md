@@ -87,6 +87,7 @@ workbook/
   one-change.html             Exercise 2: One Meaningful Change
   checkpoints.html            Exercise 3: Build Your Checkpoints
   conversations.html          Exercise 4: Talk with Students About AI
+  what-students-see.html      Reference: the AI words students see in OCTC Student Resources and the FYE 100 guidebook
   workbook.css                Workbook styles (loads after styles.css)
   workbook.js                 Saving answers, printing, dropdowns, copy buttons
 ```
