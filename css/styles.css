@@ -1326,6 +1326,15 @@ img {
   color: var(--octc-gold);
 }
 
+/* Facilitator kit link: its own row, left-aligned under the logo */
+.footer-shell p.footer-kit {
+  grid-column: 1;
+  margin-top: -14px;
+  text-align: left;
+  font-size: 0.85rem;
+}
+.footer-shell p.footer-kit a { color: rgba(255, 255, 255, 0.9); }
+
 
 /* =========================================================
    11. Responsive — Tablet / Narrow Desktop
@@ -1375,8 +1384,10 @@ img {
     margin: 0 auto;
   }
 
-  .footer-shell p:last-child {
+  .footer-shell p:last-child,
+  .footer-shell p.footer-kit {
     text-align: center;
+    margin-top: 0;
   }
 }
 
